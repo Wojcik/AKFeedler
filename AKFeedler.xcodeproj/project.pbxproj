@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EAA7A641C976DE300214887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA7A631C976DE300214887 /* AppDelegate.swift */; };
+		8EAA7A661C976DE300214887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA7A651C976DE300214887 /* ViewController.swift */; };
+		8EAA7A691C976DE300214887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAA7A671C976DE300214887 /* Main.storyboard */; };
+		8EAA7A6C1C976DE400214887 /* AKFeedler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA7A6A1C976DE400214887 /* AKFeedler.xcdatamodeld */; };
+		8EAA7A6E1C976DE400214887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAA7A6D1C976DE400214887 /* Assets.xcassets */; };
+		8EAA7A711C976DE400214887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAA7A6F1C976DE400214887 /* LaunchScreen.storyboard */; };
+		8EAA7A7C1C976DE400214887 /* AKFeedlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA7A7B1C976DE400214887 /* AKFeedlerTests.swift */; };
+		8EAA7A881C976E3100214887 /* AKDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA7A871C976E3100214887 /* AKDataSource.swift */; };
+		8EAA7A891C976E3100214887 /* AKDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA7A871C976E3100214887 /* AKDataSource.swift */; };
+		8EAA7A8B1C976EA400214887 /* AKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA7A8A1C976EA400214887 /* AKConstants.swift */; };
+		8EAA7A8C1C976EA400214887 /* AKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA7A8A1C976EA400214887 /* AKConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EAA7A781C976DE400214887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EAA7A581C976DE300214887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EAA7A5F1C976DE300214887;
+			remoteInfo = AKFeedler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EAA7A601C976DE300214887 /* AKFeedler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKFeedler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAA7A631C976DE300214887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EAA7A651C976DE300214887 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EAA7A681C976DE300214887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EAA7A6B1C976DE400214887 /* AKFeedler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AKFeedler.xcdatamodel; sourceTree = "<group>"; };
+		8EAA7A6D1C976DE400214887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EAA7A701C976DE400214887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EAA7A721C976DE400214887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EAA7A771C976DE400214887 /* AKFeedlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKFeedlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAA7A7B1C976DE400214887 /* AKFeedlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFeedlerTests.swift; sourceTree = "<group>"; };
+		8EAA7A7D1C976DE400214887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EAA7A871C976E3100214887 /* AKDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKDataSource.swift; path = DataSource/AKDataSource.swift; sourceTree = "<group>"; };
+		8EAA7A8A1C976EA400214887 /* AKConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EAA7A5D1C976DE300214887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAA7A741C976DE400214887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EAA7A571C976DE300214887 = {
+			isa = PBXGroup;
+			children = (
+				8EAA7A621C976DE300214887 /* AKFeedler */,
+				8EAA7A7A1C976DE400214887 /* AKFeedlerTests */,
+				8EAA7A611C976DE300214887 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EAA7A611C976DE300214887 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EAA7A601C976DE300214887 /* AKFeedler.app */,
+				8EAA7A771C976DE400214887 /* AKFeedlerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EAA7A621C976DE300214887 /* AKFeedler */ = {
+			isa = PBXGroup;
+			children = (
+				8EAA7A861C976E0200214887 /* DataSource */,
+				8EAA7A631C976DE300214887 /* AppDelegate.swift */,
+				8EAA7A651C976DE300214887 /* ViewController.swift */,
+				8EAA7A671C976DE300214887 /* Main.storyboard */,
+				8EAA7A6D1C976DE400214887 /* Assets.xcassets */,
+				8EAA7A6F1C976DE400214887 /* LaunchScreen.storyboard */,
+				8EAA7A721C976DE400214887 /* Info.plist */,
+				8EAA7A6A1C976DE400214887 /* AKFeedler.xcdatamodeld */,
+				8EAA7A8A1C976EA400214887 /* AKConstants.swift */,
+			);
+			path = AKFeedler;
+			sourceTree = "<group>";
+		};
+		8EAA7A7A1C976DE400214887 /* AKFeedlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EAA7A7B1C976DE400214887 /* AKFeedlerTests.swift */,
+				8EAA7A7D1C976DE400214887 /* Info.plist */,
+			);
+			path = AKFeedlerTests;
+			sourceTree = "<group>";
+		};
+		8EAA7A861C976E0200214887 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8EAA7A871C976E3100214887 /* AKDataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EAA7A5F1C976DE300214887 /* AKFeedler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EAA7A801C976DE400214887 /* Build configuration list for PBXNativeTarget "AKFeedler" */;
+			buildPhases = (
+				8EAA7A5C1C976DE300214887 /* Sources */,
+				8EAA7A5D1C976DE300214887 /* Frameworks */,
+				8EAA7A5E1C976DE300214887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKFeedler;
+			productName = AKFeedler;
+			productReference = 8EAA7A601C976DE300214887 /* AKFeedler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EAA7A761C976DE400214887 /* AKFeedlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EAA7A831C976DE400214887 /* Build configuration list for PBXNativeTarget "AKFeedlerTests" */;
+			buildPhases = (
+				8EAA7A731C976DE400214887 /* Sources */,
+				8EAA7A741C976DE400214887 /* Frameworks */,
+				8EAA7A751C976DE400214887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EAA7A791C976DE400214887 /* PBXTargetDependency */,
+			);
+			name = AKFeedlerTests;
+			productName = AKFeedlerTests;
+			productReference = 8EAA7A771C976DE400214887 /* AKFeedlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EAA7A581C976DE300214887 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Anton Kovalev";
+				TargetAttributes = {
+					8EAA7A5F1C976DE300214887 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					8EAA7A761C976DE400214887 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8EAA7A5F1C976DE300214887;
+					};
+				};
+			};
+			buildConfigurationList = 8EAA7A5B1C976DE300214887 /* Build configuration list for PBXProject "AKFeedler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EAA7A571C976DE300214887;
+			productRefGroup = 8EAA7A611C976DE300214887 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EAA7A5F1C976DE300214887 /* AKFeedler */,
+				8EAA7A761C976DE400214887 /* AKFeedlerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EAA7A5E1C976DE300214887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAA7A711C976DE400214887 /* LaunchScreen.storyboard in Resources */,
+				8EAA7A6E1C976DE400214887 /* Assets.xcassets in Resources */,
+				8EAA7A691C976DE300214887 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAA7A751C976DE400214887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EAA7A5C1C976DE300214887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAA7A661C976DE300214887 /* ViewController.swift in Sources */,
+				8EAA7A881C976E3100214887 /* AKDataSource.swift in Sources */,
+				8EAA7A641C976DE300214887 /* AppDelegate.swift in Sources */,
+				8EAA7A6C1C976DE400214887 /* AKFeedler.xcdatamodeld in Sources */,
+				8EAA7A8B1C976EA400214887 /* AKConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAA7A731C976DE400214887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAA7A7C1C976DE400214887 /* AKFeedlerTests.swift in Sources */,
+				8EAA7A8C1C976EA400214887 /* AKConstants.swift in Sources */,
+				8EAA7A891C976E3100214887 /* AKDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EAA7A791C976DE400214887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EAA7A5F1C976DE300214887 /* AKFeedler */;
+			targetProxy = 8EAA7A781C976DE400214887 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EAA7A671C976DE300214887 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EAA7A681C976DE300214887 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EAA7A6F1C976DE400214887 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EAA7A701C976DE400214887 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EAA7A7E1C976DE400214887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EAA7A7F1C976DE400214887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EAA7A811C976DE400214887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AKFeedler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = softheme.AKFeedler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EAA7A821C976DE400214887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AKFeedler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = softheme.AKFeedler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8EAA7A841C976DE400214887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AKFeedlerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = softheme.AKFeedlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKFeedler.app/AKFeedler";
+			};
+			name = Debug;
+		};
+		8EAA7A851C976DE400214887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AKFeedlerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = softheme.AKFeedlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKFeedler.app/AKFeedler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EAA7A5B1C976DE300214887 /* Build configuration list for PBXProject "AKFeedler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAA7A7E1C976DE400214887 /* Debug */,
+				8EAA7A7F1C976DE400214887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EAA7A801C976DE400214887 /* Build configuration list for PBXNativeTarget "AKFeedler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAA7A811C976DE400214887 /* Debug */,
+				8EAA7A821C976DE400214887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EAA7A831C976DE400214887 /* Build configuration list for PBXNativeTarget "AKFeedlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAA7A841C976DE400214887 /* Debug */,
+				8EAA7A851C976DE400214887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8EAA7A6A1C976DE400214887 /* AKFeedler.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8EAA7A6B1C976DE400214887 /* AKFeedler.xcdatamodel */,
+			);
+			currentVersion = 8EAA7A6B1C976DE400214887 /* AKFeedler.xcdatamodel */;
+			path = AKFeedler.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8EAA7A581C976DE300214887 /* Project object */;
+}
