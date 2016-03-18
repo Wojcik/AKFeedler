@@ -8,9 +8,17 @@
 
 import Foundation
 
-class AKDataSource: NSObject
+typealias CompletionBlock = (NSData?, String?) -> Void
+
+class AKNetworkSession
 {
-    class func httpGet(request: NSURLRequest!, callback: (NSData?, String?) -> Void) {
+    func httpGet(resourcePath: String!, callback: CompletionBlock){
+        let resourceURL:NSURL! = NSURL(string: resourcePath)
+        let request = NSURLRequest(URL: resourceURL)
+        self.httpGet(request, callback:callback)
+    }
+
+    func httpGet(request: NSURLRequest!, callback: CompletionBlock) {
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(request){
             (data, response, error) -> Void in
