@@ -50,22 +50,22 @@
 		2762A2FFAD1BED06413B495F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2762A352DD64CFBF9B634EB7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		2762A4D6EE23BB498838D369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2762AAF8B29B8B0FC68B8BD8 /* AKZXMLLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKZXMLLoader.swift; path = DataSource/AKZXMLLoader.swift; sourceTree = "<group>"; };
+		2762AAF8B29B8B0FC68B8BD8 /* AKZXMLLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKZXMLLoader.swift; sourceTree = "<group>"; };
 		2762AC06B73891B3A7D441AD /* AKFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKFeed.swift; sourceTree = "<group>"; };
 		2762AFF365F9CCCBC8F281BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E1C6C6A1C9D5962007BBAB5 /* AKLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AKLoadingView.xib; path = Views/AKLoadingView/AKLoadingView.xib; sourceTree = "<group>"; };
-		8E1C6C6D1C9D598A007BBAB5 /* AKLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKLoadingView.swift; path = Views/AKLoadingView/AKLoadingView.swift; sourceTree = "<group>"; };
+		8E1C6C6A1C9D5962007BBAB5 /* AKLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKLoadingView.xib; sourceTree = "<group>"; };
+		8E1C6C6D1C9D598A007BBAB5 /* AKLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKLoadingView.swift; sourceTree = "<group>"; };
 		8E6A50191C9CB54600EDB83B /* AKItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKItem.swift; sourceTree = "<group>"; };
 		8E6A501C1C9CBC8600EDB83B /* AKItemAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKItemAssembly.swift; sourceTree = "<group>"; };
 		8E6A501F1C9CC4BE00EDB83B /* AKItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKItemsListViewController.swift; sourceTree = "<group>"; };
-		8E6A50231C9CC66700EDB83B /* AKItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKItemCell.swift; path = Views/AKItemCell.swift; sourceTree = "<group>"; };
+		8E6A50231C9CC66700EDB83B /* AKItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKItemCell.swift; sourceTree = "<group>"; };
 		8E6A50261C9CCFD700EDB83B /* AKItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKItemDetailsViewController.swift; sourceTree = "<group>"; };
 		8EAA7A601C976DE300214887 /* AKFeedler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKFeedler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAA7A631C976DE300214887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EAA7A771C976DE400214887 /* AKFeedlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKFeedlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAA7A7B1C976DE400214887 /* AKFeedlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFeedlerTests.swift; sourceTree = "<group>"; };
 		8EAA7A7D1C976DE400214887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EAA7A871C976E3100214887 /* AKNetworkSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKNetworkSession.swift; path = DataSource/AKNetworkSession.swift; sourceTree = "<group>"; };
+		8EAA7A871C976E3100214887 /* AKNetworkSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKNetworkSession.swift; sourceTree = "<group>"; };
 		8EAA7A8A1C976EA400214887 /* AKConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,12 +90,12 @@
 		2762A2BA883DF6B9C1AF8392 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2762A2FFAD1BED06413B495F /* Assets.xcassets */,
 				2762A352DD64CFBF9B634EB7 /* Info.plist */,
 				2762AC89D650D1D11E0D4F2F /* LaunchScreen.storyboard */,
 				2762A8BE943FB5812F46BF10 /* Main.storyboard */,
-				2762A2FFAD1BED06413B495F /* Assets.xcassets */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2762AB4153D4E3A30D5BE9FA /* Model */ = {
@@ -111,20 +111,20 @@
 		8E1C6C681C9D4BF4007BBAB5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8E6A501F1C9CC4BE00EDB83B /* AKItemsListViewController.swift */,
 				8E6A50261C9CCFD700EDB83B /* AKItemDetailsViewController.swift */,
+				8E6A501F1C9CC4BE00EDB83B /* AKItemsListViewController.swift */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		8E6A50221C9CC63000EDB83B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				8E6A50231C9CC66700EDB83B /* AKItemCell.swift */,
-				8E1C6C6A1C9D5962007BBAB5 /* AKLoadingView.xib */,
 				8E1C6C6D1C9D598A007BBAB5 /* AKLoadingView.swift */,
+				8E1C6C6A1C9D5962007BBAB5 /* AKLoadingView.xib */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8EAA7A571C976DE300214887 = {
@@ -148,13 +148,13 @@
 		8EAA7A621C976DE300214887 /* AKFeedler */ = {
 			isa = PBXGroup;
 			children = (
-				8E6A50221C9CC63000EDB83B /* Views */,
 				8EAA7A861C976E0200214887 /* DataSource */,
-				8EAA7A631C976DE300214887 /* AppDelegate.swift */,
-				8EAA7A8A1C976EA400214887 /* AKConstants.swift */,
 				2762AB4153D4E3A30D5BE9FA /* Model */,
 				2762A2BA883DF6B9C1AF8392 /* Supporting Files */,
 				8E1C6C681C9D4BF4007BBAB5 /* ViewControllers */,
+				8E6A50221C9CC63000EDB83B /* Views */,
+				8EAA7A8A1C976EA400214887 /* AKConstants.swift */,
+				8EAA7A631C976DE300214887 /* AppDelegate.swift */,
 			);
 			path = AKFeedler;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 				8EAA7A871C976E3100214887 /* AKNetworkSession.swift */,
 				2762AAF8B29B8B0FC68B8BD8 /* AKZXMLLoader.swift */,
 			);
-			name = DataSource;
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +329,7 @@
 				2762AFF365F9CCCBC8F281BF /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		2762AC89D650D1D11E0D4F2F /* LaunchScreen.storyboard */ = {
@@ -337,6 +338,7 @@
 				2762A4D6EE23BB498838D369 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -429,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AKFeedler/Info.plist;
+				INFOPLIST_FILE = "AKFeedler/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = softheme.AKFeedler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,7 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AKFeedler/Info.plist;
+				INFOPLIST_FILE = "AKFeedler/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = softheme.AKFeedler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
