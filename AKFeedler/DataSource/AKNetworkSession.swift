@@ -22,11 +22,14 @@ class AKNetworkSession
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(request){
             (data, response, error) -> Void in
-            if error != nil {
-                callback(nil, error!.localizedDescription)
-            } else {
-                callback(data, nil)
+            dispatch_async(dispatch_get_main_queue()) {
+                if error != nil {
+                    callback(nil, error!.localizedDescription)
+                } else {
+                    callback(data, nil)
+                }
             }
+
         }
         task.resume()
     }
