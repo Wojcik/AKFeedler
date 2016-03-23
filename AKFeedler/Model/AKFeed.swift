@@ -6,5 +6,9 @@
 import Foundation
 
 class AKFeed {
+    // MARK: -refactor this 
+    var gettingChannelInfo = false
+    var waitingForTitle = false
+    var title: String! = ""
     var items = [AKItem]()
 }

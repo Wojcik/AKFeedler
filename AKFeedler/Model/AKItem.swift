@@ -14,7 +14,7 @@ class AKItem {
     var pubDate: String = ""
     var description: String = ""
     
-    func appendElement (element:AKItemAssembly) {
+    func appendElement (element:AKItemAssembly!) {
         switch element.elementName {
         case "title":
             self.title = element.elementContents

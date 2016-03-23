@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AKItemAssembly {
+class AKItemAssembly {
     var elementName: String = ""
     var elementContents: String = ""
 }

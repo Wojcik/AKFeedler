@@ -8,31 +8,20 @@
 
 import UIKit
 
-class AKItemsListViewController: UITableViewController {
+class AKItemsListViewController: UITableViewController, AKReloadDelegate {
 
     var feed:AKFeed?
-    var loadingView:AKLoadingView?
+    lazy var loadingView:AKLoadingView! = {
+        return AKLoadingView.loadView() as! AKLoadingView
+    }()
+    lazy var nothingToShowView:AKNothingToDisplayView? = {
+        return AKNothingToDisplayView.loadView() as? AKNothingToDisplayView
+    }()
+    // MARK: - view life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.loadingView = AKLoadingView.loadView()
-        
-        if let view = self.loadingView {
-            self.view.addSubview(view)
-            let horizontalConstraint = view.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor)
-            let verticalConstraint = view.centerYAnchor.constraintEqualToAnchor(self.view.centerYAnchor)
-            let widthConstraint = view.widthAnchor.constraintEqualToAnchor(self.view.widthAnchor)
-            let heightConstraint = view.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor)
-            NSLayoutConstraint.activateConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
-        }
-
-        
-        let xmlLoader = AKZXMLLoader(networkSession: AKNetworkSession())
-        xmlLoader.loadXML { (xml: AKFeed) -> Void in
-            self.feed = xml
-            self.loadingView?.removeFromSuperview()
-            self.tableView.reloadData()
-        }
+        self.loadItems()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -42,6 +31,7 @@ class AKItemsListViewController: UITableViewController {
         detailsVC.item = item
     }
     
+    // MARK: - table view data source 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -56,10 +46,38 @@ class AKItemsListViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:AKItemCell = tableView.dequeueReusableCellWithIdentifier( "AKItemCell", forIndexPath: indexPath) as! AKItemCell
+        let cell:AKItemCell = tableView.dequeueReusableCellWithIdentifier( String(AKItemCell), forIndexPath: indexPath) as! AKItemCell
         let item = self.feed!.items[indexPath.row]
         cell.fillWithItem(item)
         return cell
+    }
+    
+    // MARK: - AKReloadDelegate 
+    func reload() {
+        self.loadItems()
+    }
+    
+    //MARK : - private
+    
+    func loadItems () -> Void
+    {
+        self.view.addSubview(self.loadingView)
+        self.loadingView.fillView(self.view)
+        
+        let xmlLoader = AKZXMLLoader(networkSession: AKNetworkSession())
+        xmlLoader.loadXML { xml in
+            self.feed = xml
+            self.title = self.feed?.title
+            self.loadingView.removeFromSuperview()
+            if xml != nil {
+                self.nothingToShowView?.removeFromSuperview()
+                self.tableView.reloadData()
+            } else {
+                self.nothingToShowView?.delegate = self
+                self.view.addSubview(self.nothingToShowView!)
+                self.nothingToShowView!.fillView(self.view)
+            }
+        }
     }
     
 }
